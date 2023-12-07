@@ -3,6 +3,7 @@
 		"name": "Pizza Compass",
 		"description": "A compass that always point toward the closes pizza place",
 		"path": "pizza-compass",
+		"cover": "/media/pizza-compass.png",
 		"demo": "https://play.runeharlyk.dk/pizzacompass",
 		"framed_demo": "https://play.runeharlyk.dk/pizzacompass",
 		"source": "https://github.com/runeharlyk/Pizza-Compass",
@@ -13,6 +14,7 @@
 		"name": "Bunny OS",
 		"description": "A OS UX in the common web browser",
 		"path": "bunny-os",
+		"cover": "/media/bunny.png",
 		"demo": "https://bunnyos.runeharlyk.dk/",
 		"framed_demo": "https://bunnyos.runeharlyk.dk/",
 		"source": "https://github.com/runeharlyk/Bunny-OS",
@@ -35,18 +37,19 @@
 		"description": "My take on the quadruped Spot Micro robot. Its built around an ESP32 cam microcontroller and utilizes a svelte app to control it",
 		"framed_demo": "https://raw.githubusercontent.com/runeharlyk/SpotMicro-Leika/main/assets/logo.jpg",
 		"path": "spot-micro",
+		"cover": "/media/leika.jpg",
 		"source": "https://github.com/runeharlyk/SpotMicroESP32-Leika",
 		"keywords": ["Spot-micro", "Three", "Svelte", "ESP32"]
 	},
 	{
-		"name": "",
-		"description": "",
-		"path": "demo",
-		"next_page": "",
+		"name": "Runeharlyk.dk",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ipsum felis. Etiam congue, nisl vestibulum maximus scelerisque, nulla purus venenatis erat, non congue nunc lacus sit amet ante. Proin purus neque, condimentum ut cursus ut, varius id dui. Etiam porttitor sollicitudin libero, at mattis dui pharetra eget. Nullam non ex dignissim, elementum nisi a, ullamcorper erat. Suspendisse in volutpat ante. Pellentesque dui nisi, lacinia at rhoncus sit amet, tincidunt vitae enim. Ut at augue sit amet eros bibendum dignissim eu a metus. Morbi condimentum leo et felis lobortis, non pharetra tortor viverra. Curabitur bibendum viverra urna at venenatis. Morbi quis erat aliquet, finibus ante ut, euismod tortor. Donec posuere ornare sem elementum pretium. Praesent sapien nisi, tristique sed nibh vehicula, suscipit rutrum velit. Suspendisse vehicula urna ut urna congue, vitae consequat lectus bibendum. Cras tristique vestibulum lectus at condimentum. Sed ac nulla non libero fringilla rhoncus at nec erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ipsum felis. Etiam congue, nisl vestibulum maximus scelerisque, nulla purus venenatis erat, non congue nunc lacus sit amet ante. Proin purus neque, condimentum ut cursus ut, varius id dui. Etiam porttitor sollicitudin libero, at mattis dui pharetra eget. Nullam non ex dignissim, elementum nisi a, ullamcorper erat. Suspendisse in volutpat ante. Pellentesque dui nisi, lacinia at rhoncus sit amet, tincidunt vitae enim. Ut at augue sit amet eros bibendum dignissim eu a metus. Morbi condimentum leo et felis lobortis, non pharetra tortor viverra. Curabitur bibendum viverra urna at venenatis. Morbi quis erat aliquet, finibus ante ut, euismod tortor. Donec posuere ornare sem elementum pretium. Praesent sapien nisi, tristique sed nibh vehicula, suscipit rutrum velit. Suspendisse vehicula urna ut urna congue, vitae consequat lectus bibendum. Cras tristique vestibulum lectus at condimentum. Sed ac nulla non libero fringilla rhoncus at nec erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ipsum felis. Etiam congue, nisl vestibulum maximus scelerisque, nulla purus venenatis erat, non congue nunc lacus sit amet ante. Proin purus neque, condimentum ut cursus ut, varius id dui. Etiam porttitor sollicitudin libero, at mattis dui pharetra eget. Nullam non ex dignissim, elementum nisi a, ullamcorper erat. Suspendisse in volutpat ante. Pellentesque dui nisi, lacinia at rhoncus sit amet, tincidunt vitae enim. Ut at augue sit amet eros bibendum dignissim eu a metus. Morbi condimentum leo et felis lobortis, non pharetra tortor viverra. Curabitur bibendum viverra urna at venenatis. Morbi quis erat aliquet, finibus ante ut, euismod tortor. Donec posuere ornare sem elementum pretium. Praesent sapien nisi, tristique sed nibh vehicula, suscipit rutrum velit. Suspendisse vehicula urna ut urna congue, vitae consequat lectus bibendum. Cras tristique vestibulum lectus at condimentum. Sed ac nulla non libero fringilla rhoncus at nec erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet ipsum felis. Etiam congue, nisl vestibulum maximus scelerisque, nulla purus venenatis erat, non congue nunc lacus sit amet ante. Proin purus neque, condimentum ut cursus ut, varius id dui. Etiam porttitor sollicitudin libero, at mattis dui pharetra eget. Nullam non ex dignissim, elementum nisi a, ullamcorper erat. Suspendisse in volutpat ante. Pellentesque dui nisi, lacinia at rhoncus sit amet, tincidunt vitae enim. Ut at augue sit amet eros bibendum dignissim eu a metus. Morbi condimentum leo et felis lobortis, non pharetra tortor viverra. Curabitur bibendum viverra urna at venenatis. Morbi quis erat aliquet, finibus ante ut, euismod tortor. Donec posuere ornare sem elementum pretium. Praesent sapien nisi, tristique sed nibh vehicula, suscipit rutrum velit. Suspendisse vehicula urna ut urna congue, vitae consequat lectus bibendum. Cras tristique vestibulum lectus at condimentum. Sed ac nulla non libero fringilla rhoncus at nec erat.",
+		"path": "runeharlyk.dk",
+		"cover": "/media/runeharlyk.dk.png",
 		"demo": "https://",
-		"framed_demo": "https://",
+		"framed_demo": "https://runeharlyk.dk",
 		"source": "https://github.com",
 		"build_with": ["", ""],
-		"keywords": [""]
+		"keywords": ["Svelte", "Threlte", "Three"]
 	}
 ]
