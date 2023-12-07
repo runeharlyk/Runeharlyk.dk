@@ -4,14 +4,10 @@
 	export let data:prototype;
 	let frame:HTMLIFrameElement;
 	let frame_hidden = true
-	let reload = {}
-
-	$:frame_height = "h-[" + frame?.height || 0 + "px]"
 
 	$: {
 		frame_hidden = true
 		const demo = data.framed_demo
-		reload = {data:demo}
 		loadDemo()
 	}
 
@@ -30,7 +26,7 @@
 	}
 </script>
 
-<div class="flex justify-center w-screen">
+<div class="flex justify-center w-screen min-h-screen overflow-scroll">
 	<div class="max-w-7xlxl w-full flex items-center flex-col p-5">
 		<div class="flex divide-x divide-slate-800 uppercase justify-center text-sm">
 			{#each data.keywords || [] as keyword}
@@ -38,22 +34,24 @@
 			{/each}
 		</div>
 		<h1 class="text-4xl p-10">{data.name}</h1>
-		<div class="divide-x divide-slate-800 pb-4">
+		<div class="divide-x divide-slate-800 pb-4">[
 			{#if data.framed_demo}
-			[<a href={data.framed_demo} class="px-4">Demo</a>
+				<a href={data.framed_demo} class="px-4">Demo</a>
 			{/if}
 			{#if data.source}
-			<a href={data.source} class="px-4">Source</a>]
+				<a href={data.source} class="px-4">Source</a>
 			{/if}
+		]
 		</div>
-		
-		<div class={`w-full max-w-7xl border-grey-900 transition-height duration-1000 overflow-hidden ${frame_hidden ? 'h-0' : 'h-full'} ${data.framed_demo?'border-2':''}`}>
-		{#if data.framed_demo }
-			<iframe 
+		<div class="w-full max-w-7xl flex items-center">
+			<div class={`w-full border-grey-900 transition-height duration-1000 backdrop-blur-md overflow-hidden ${frame_hidden ? 'h-0' : 'h-full'} ${data.framed_demo?'border-2':''}`}>
+				{#if data.framed_demo }
+				<iframe 
 				class={`w-full  transition-height duration-1000 aspect-video`}
 				bind:this={frame} 
 				title="demo" />
-			{/if}
+				{/if}
+			</div>
 		</div>
 	
 		<div class="w-full flex justify-end">

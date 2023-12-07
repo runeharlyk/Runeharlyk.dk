@@ -22,12 +22,12 @@ import prototypes from './prototypes.json'
 	</div>
 
 	<div class="h-screen ocean">
-        <div class="grid grid-cols-1 md:grid-cols-2 grid-flow-row hover:grid-flow-row-dense gap-10 md:gap-24 auto-cols-max pt-20 px-10 md:px-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 grid-flow-row hover:grid-flow-row-dense gap-10 md:gap-24 auto-cols-max py-20 px-10 md:px-20">
             {#each prototypes as proto}
                 <Card data={proto}></Card>
             {/each}
         </div>
-		<footer class="fixed bottom-0 flex h-16 w-full text-zinc-50 justify-between p-4">
+		<footer class="fixed bottom-0 flex h-16 w-full text-zinc-50 justify-between p-4 z-20">
 			<div />
 			<div>Made with ❤️ and 🕰️ by Rune Harlyk</div>
 		</footer>
@@ -48,8 +48,8 @@ import prototypes from './prototypes.json'
 		background: linear-gradient(to bottom, #4286f4, #252d40, #252d40, #070a0f);
 	}
 
-	* {
+	/* * {
 		border: 1px solid red;
 		box-sizing: border-box;
-	}
+	} */
 </style>
