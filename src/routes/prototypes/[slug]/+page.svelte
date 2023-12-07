@@ -7,7 +7,6 @@
 
 	$: {
 		frame_hidden = true
-		const demo = data.framed_demo
 		loadDemo()
 	}
 
@@ -17,11 +16,7 @@
 
 	const loadDemo = () => {
 		if (!frame || !data.framed_demo) return
-		
-		frame.onload = () => {
-			frame_hidden = false
-		}
-			
+		frame.onload = () => frame_hidden = false			
 		frame.src = data.framed_demo
 	}
 </script>

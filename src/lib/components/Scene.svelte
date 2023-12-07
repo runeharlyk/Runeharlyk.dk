@@ -106,6 +106,20 @@
   floatingRange={[0, 1]}
 >
   <T.Mesh
+    position={[0, -2, -$scrollPercent/20-1]}
+    rotation.x={5}
+    rotation.y={71}
+  >
+    <T.TorusKnotGeometry args={[0.5, 0.15, 100, 12, 2, 3]} />
+    <T.MeshStandardMaterial color="#F85122" />
+  </T.Mesh>
+</Float>
+
+<Float
+  floatIntensity={1}
+  floatingRange={[0, 1]}
+>
+  <T.Mesh
     position={[0, -5, 2+-$scrollPercent/20]}
     rotation.x={5}
     rotation.y={71}
