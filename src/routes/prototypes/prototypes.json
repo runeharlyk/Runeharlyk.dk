@@ -1,50 +1,52 @@
 [
-    {
-        "name": "Pizza Compass",
-        "description": "A compass that always point toward the closes pizza place",
-        "path": "pizza-compass",
-        "demo": "https://play.runeharlyk.dk/pizzacompass",
-        "framed-demo": "https://play.runeharlyk.dk/pizzacompass",
-        "source": "https://github.com/runeharlyk/Pizza-Compass",
-        "build-with": ["Svelte", "Google maps api"],
-        "keywords": ["Pizza", "Compass", "API"]
-    },
-    {
-        "name": "Bunny OS",
-        "description": "A OS UX in the common web browser",
-        "path": "bunny-os",
-        "demo": "https://bunnyos.runeharlyk.dk/",
-        "framed-demo": "https://bunnyos.runeharlyk.dk/",
-        "source": "https://github.com/runeharlyk/Bunny-OS",
-        "build-with": ["Svelte", "Google maps api"],
-        "keywords": ["OS", "Bunny", "UX"]
-    },
-    {
-        "name": "Neural Visualizer",
-        "description": "3D interactive visualization of neural network architectures",
-        "path": "neural-visualizer",
-        "demo": "https://runeharlyk.github.io/Neural-Visualizer",
-        "framed-demo": "https://runeharlyk.github.io/Neural-Visualizer",
-        "source": "https://github.com/runeharlyk/Neural-Visualizer",
-        "build-with": ["Svelte", "Three", "TensorflowJS"],
-        "keywords": ["Three", "cnn", "neural-network"]
-    },
-    
-    {
-        "name": "Spot Micro | Leika",
-        "description": "My take on the quadruped Spot Micro robot. Its built around an ESP32 cam microcontroller and utilizes a svelte app to control it",
-        "path": "spot-micro",
-        "source": "https://github.com/runeharlyk/SpotMicroESP32-Leika",
-        "keywords": ["Spot-micro", "Three", "Svelte", "ESP32"]
-    },
-    {
-        "name": "",
-        "description": "",
-        "path": "demo",
-        "demo": "https://",
-        "framed-demo": "https://",
-        "source": "https://github.com",
-        "build-with": ["", ""],
-        "keywords": [""]
-    }
+	{
+		"name": "Pizza Compass",
+		"description": "A compass that always point toward the closes pizza place",
+		"path": "pizza-compass",
+		"demo": "https://play.runeharlyk.dk/pizzacompass",
+		"framed_demo": "https://play.runeharlyk.dk/pizzacompass",
+		"source": "https://github.com/runeharlyk/Pizza-Compass",
+		"build_with": ["Svelte", "Google maps api"],
+		"keywords": ["Pizza", "Compass", "API"]
+	},
+	{
+		"name": "Bunny OS",
+		"description": "A OS UX in the common web browser",
+		"path": "bunny-os",
+		"demo": "https://bunnyos.runeharlyk.dk/",
+		"framed_demo": "https://bunnyos.runeharlyk.dk/",
+		"source": "https://github.com/runeharlyk/Bunny-OS",
+		"build_with": ["Svelte", "Google maps api"],
+		"keywords": ["OS", "Bunny", "UX"]
+	},
+	{
+		"name": "Neural Visualizer",
+		"description": "3D interactive visualization of neural network architectures",
+		"path": "neural-visualizer",
+		"demo": "https://runeharlyk.github.io/Neural-Visualizer",
+		"framed_demo": "https://runeharlyk.github.io/Neural-Visualizer",
+		"source": "https://github.com/runeharlyk/Neural-Visualizer",
+		"build_with": ["Svelte", "Three", "TensorflowJS"],
+		"keywords": ["Three", "cnn", "neural-network"]
+	},
+
+	{
+		"name": "Spot Micro | Leika",
+		"description": "My take on the quadruped Spot Micro robot. Its built around an ESP32 cam microcontroller and utilizes a svelte app to control it",
+		"framed_demo": "https://raw.githubusercontent.com/runeharlyk/SpotMicro-Leika/main/assets/logo.jpg",
+		"path": "spot-micro",
+		"source": "https://github.com/runeharlyk/SpotMicroESP32-Leika",
+		"keywords": ["Spot-micro", "Three", "Svelte", "ESP32"]
+	},
+	{
+		"name": "",
+		"description": "",
+		"path": "demo",
+		"next_page": "",
+		"demo": "https://",
+		"framed_demo": "https://",
+		"source": "https://github.com",
+		"build_with": ["", ""],
+		"keywords": [""]
+	}
 ]
