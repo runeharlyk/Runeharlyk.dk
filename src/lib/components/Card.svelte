@@ -67,11 +67,11 @@
     on:mouseout={handleMouseLeave} 
     class="aspect-video hover:transition-none transition-transform z-20">
     <div bind:this={card} class="card h-full flex justify-center">  
-        <div class="w-full -z-10 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+        <div class="relative w-full -z-10 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
             
             <img src={data.cover} class="object-cover w-full h-full -z-10" alt="">
             <a class="absolute bottom-0 w-full h-full md:opacity-0 hover:opacity-100 active:opacity-100 z-10 transition-opacity" href={`prototypes/${data.path}`}>
-                <div class="absolute bottom-0 h-28 w-full flex flex-col bg-gray-900 bg-opacity-50 text-white p-4">
+                <div class="absolute bottom-0 h-24 w-full flex flex-col bg-gray-900 bg-opacity-50 text-white p-4">
                     <div class="flex flex-row divide-x divide-slate-800 uppercase -ml-4">
                         {#each data.keywords || [] as keyword}
                             <div class="px-4">{@html keyword}</div>
