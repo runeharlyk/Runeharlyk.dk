@@ -52,5 +52,13 @@
 		"source": "https://github.com",
 		"build_with": ["", ""],
 		"keywords": ["Svelte", "Threlte", "Three"]
+	},
+	{
+		"name": "Galaxy",
+		"description": "ThreeJs Galaxy",
+		"path": "work",
+		"framed_demo": "/scenes/galaxy",
+		"build_with": ["Threlte", "Post Proccesing"],
+		"keywords": ["Threlte", "Galaxy", "Post Proccesing"]
 	}
 ]
