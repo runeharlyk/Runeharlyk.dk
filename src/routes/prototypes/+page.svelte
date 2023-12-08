@@ -3,7 +3,7 @@
     import prototypes from './prototypes.json'
 </script>
 <div>
-	<div class="-z-10 h-screen sky flex justify-items-center p-10 bg-opacity-60 text-white">
+	<div class="-z-10 h-screen sky flex flex-col justify-items-center pt-14 p-10 bg-opacity-60 text-content">
         <div class="">
             <h1 class="text-3xl">Prototype [noun]</h1>
             <h2>/ˈprəʊtətʌɪp/</h2>
@@ -17,9 +17,5 @@
                 <Card data={proto}></Card>
             {/each}
         </div>
-		<footer class="fixed bottom-0 flex h-16 w-full text-zinc-50 justify-between p-4 z-20">
-			<div />
-			<div>Made with ❤️ and 🕰️ by Rune Harlyk</div>
-		</footer>
 	</div>
 </div>
