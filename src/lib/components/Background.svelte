@@ -2,8 +2,7 @@
 	import { Canvas } from '@threlte/core';
 	import GalaxyScene from '$lib/components/Scenes/Galaxy/GalaxyScene.svelte';
 	import OceanScene from '$lib/components/Scenes/Ocean/OceanScene.svelte';
-
-    type BackgroundScene = "Galaxy" | "Ocean"
+	import type { BackgroundScene } from '$lib/models';
 
     export let scene:BackgroundScene
 </script>
@@ -23,5 +22,11 @@
         background: #000428;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .bg-Ocean {
+        background: #000046;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
 </style>

@@ -60,5 +60,13 @@
 		"framed_demo": "/scenes/galaxy",
 		"build_with": ["Threlte", "Post Proccesing"],
 		"keywords": ["Threlte", "Galaxy", "Post Proccesing"]
+	},
+	{
+		"name": "Ocean tank",
+		"description": "Ocean populated with Boids",
+		"path": "ocean",
+		"framed_demo": "/scenes/ocean",
+		"build_with": ["Threlte", "Post Proccesing"],
+		"keywords": ["Threlte", "Galaxy", "Post Proccesing"]
 	}
 ]
