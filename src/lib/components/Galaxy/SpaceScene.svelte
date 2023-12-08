@@ -7,6 +7,7 @@
   import { cubicOut } from 'svelte/easing';
   import PostProcessingBloom from './PostProcessingBloom.svelte'
 	import Galaxy from './Galaxy.svelte';
+	import Stars from './Stars.svelte';
     
   const mouseX = tweened(0, { duration: 400, easing: cubicOut });
   const mouseY = tweened(0, { duration: 400, easing: cubicOut });
@@ -19,17 +20,20 @@
 
 <Galaxy />
 
+<Stars color={0xfff4ea} stars={50} radius={500}/>
+<Stars color={0xffcc6f} stars={100} radius={700}/>
+<Stars color={0xffd2a1} stars={300} radius={1000}/>
+
 <T.PerspectiveCamera
   makeDefault
-  position={[ $mouseX*100 , -500+ -$mouseY*100 - $scrollPercent/10 + 1,500]}
+  position={[50 - $mouseX * 100 , -500 - $mouseY * 100 - $scrollPercent*10, 500]}
   fov={50}
 >
   <OrbitControls
     autoRotate={false}
     enableZoom={false}
     enableDamping
-    autoRotateSpeed={0.5}
-    target={[0,-$scrollPercent/10+1,0]}
+    autoRotateSpeed={1}    
   />
 </T.PerspectiveCamera>
 
