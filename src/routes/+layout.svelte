@@ -4,7 +4,6 @@
 	import Header from '$lib/components/Header.svelte';
     import Footer from '$lib/components/Footer.svelte';
 	import { page } from '$app/stores';
-	$: console.log($page.params);
 </script>
 
 {#if $page.route.id?.includes('/scenes/')}
