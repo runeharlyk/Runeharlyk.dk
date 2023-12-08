@@ -1,0 +1,14 @@
+[
+	{
+		"name": "LinkedIn",
+		"url": "https://www.linkedin.com/in/rune-harlyk/",
+		"handle": "runeharlyk",
+		"img": "/socials/icons8-linkedin.svg"
+	},
+	{
+		"name": "Github",
+		"url": "https://github.com/runeharlyk",
+		"handle": "runeharlyk",
+		"img": "/socials/icons8-github.svg"
+	}
+]
