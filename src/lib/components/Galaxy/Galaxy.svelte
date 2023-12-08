@@ -27,7 +27,7 @@
 
     export let haze:number = 0.5
 
-    const positions = generatePositions(stars, arms_density, arm_x_mean, arm_x, arm_y_mean, arm_y, thickness, core_x, core_y, outer_core_x)
+    const positions = generatePositions(stars, arms_density, arm_x_mean, arm_x, arm_y_mean, arm_y, thickness, core_x, core_y, outer_core_x, spiral)
 </script>
 
 <InstancedMesh limit={10000} range={10000}>  

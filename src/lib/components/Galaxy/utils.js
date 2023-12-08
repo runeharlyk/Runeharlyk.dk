@@ -1,5 +1,3 @@
-import { ARM_X_DIST, SPIRAL } from './config/galaxyConfig.js';
-
 export function gaussianRandom(mean = 0, stdev = 1) {
 	let u = 1 - Math.random();
 	let v = Math.random();
@@ -12,11 +10,11 @@ export function clamp(value, minimum, maximum) {
 	return Math.min(maximum, Math.max(minimum, value));
 }
 
-export function spiral(x, y, z, offset) {
+export function spiral(x, y, z, offset, arm_x, spiral) {
 	let r = Math.sqrt(x ** 2 + y ** 2);
 	let theta = offset;
 	theta += x > 0 ? Math.atan(y / x) : Math.atan(y / x) + Math.PI;
-	theta += (r / ARM_X_DIST) * SPIRAL;
+	theta += (r / arm_x) * spiral;
 	return [r * Math.cos(theta), r * Math.sin(theta), z];
 }
 
@@ -39,7 +37,8 @@ export const generatePositions = (
 	thickness,
 	core_x,
 	core_y,
-	outer_core_x
+	outer_core_x,
+	spiral_value
 ) => {
 	let positions = [];
 
@@ -49,7 +48,9 @@ export const generatePositions = (
 				gaussianRandom(arm_x_mean, arm_x),
 				gaussianRandom(arm_y_mean, arm_y),
 				gaussianRandom(0, thickness),
-				(j * 2 * Math.PI) / arms_density
+				(j * 2 * Math.PI) / arms_density,
+				arm_x,
+				spiral_value
 			);
 			positions.push(pos);
 		}
