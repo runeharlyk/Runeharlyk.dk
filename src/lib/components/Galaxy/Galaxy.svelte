@@ -1,12 +1,12 @@
 <script lang="ts">
-    import { Galaxy } from "./objects/galaxy";
+    import { T } from '@threlte/core'
+    import { generatePositions } from './utils.js';
+    import { getStarType, starTypes } from './config/starDistributions.js'
 
-    import { useTask, useThrelte } from '@threlte/core'
-	
+    import {InstancedMesh, Instance } from '@threlte/extras'
 
-    const { scene } = useThrelte()
-
-    export let stars:number = 5000
+    export let world_scale = 1
+    export let stars:number = 2000
     export let arms:number = 4
 
     export let thickness:number = 5
@@ -27,5 +27,14 @@
 
     export let haze:number = 0.5
 
-    let galaxy = new Galaxy(scene)
+    const positions = generatePositions(stars, arms_density, arm_x_mean, arm_x, arm_y_mean, arm_y, thickness, core_x, core_y, outer_core_x)
 </script>
+
+<InstancedMesh limit={10000} range={10000}>  
+    <T.SphereGeometry/>
+    <T.MeshBasicMaterial />
+
+    {#each positions as position, i}
+        <Instance position={position} color={starTypes.color[getStarType()]} scale={starTypes.size[getStarType()]}/>
+    {/each}
+</InstancedMesh>
