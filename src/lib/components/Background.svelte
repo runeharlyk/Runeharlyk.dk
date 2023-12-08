@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Canvas } from '@threlte/core';
-	import SpaceScene from '$lib/components/Galaxy/SpaceScene.svelte';
-	import OceanScene from '$lib/components/OceanScene.svelte';
+	import GalaxyScene from '$lib/components/Scenes/Galaxy/GalaxyScene.svelte';
+	import OceanScene from '$lib/components/Scenes/Ocean/OceanScene.svelte';
 
     type BackgroundScene = "Galaxy" | "Ocean"
 
@@ -11,7 +11,7 @@
 <div class="fixed top-0 h-full w-full -z-10 bg-{scene}">
     <Canvas>
         {#if scene === "Galaxy"}
-            <SpaceScene />
+            <GalaxyScene />
         {:else if scene === "Ocean"}
             <OceanScene />
         {/if}
