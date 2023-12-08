@@ -25,6 +25,7 @@
 		"name": "Neural Visualizer",
 		"description": "3D interactive visualization of neural network architectures",
 		"path": "neural-visualizer",
+		"cover": "/media/neural.png",
 		"demo": "https://runeharlyk.github.io/Neural-Visualizer",
 		"framed_demo": "https://runeharlyk.github.io/Neural-Visualizer",
 		"source": "https://github.com/runeharlyk/Neural-Visualizer",
