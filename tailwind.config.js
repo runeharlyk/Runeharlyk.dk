@@ -5,6 +5,10 @@ export default {
 		extend: {
 			transitionProperty: {
 				height: 'height'
+			},
+			colors: {
+				content: 'hsl(var(--color-text) / <alpha-value>)',
+				bg: 'hsl(var(--color-bg) / <alpha-value>)'
 			}
 		}
 	},
