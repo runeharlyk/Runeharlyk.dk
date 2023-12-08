@@ -6,11 +6,18 @@ export function gaussianRandom(mean = 0, stdev = 1) {
 	return z * stdev + mean;
 }
 
-export function clamp(value, minimum, maximum) {
+export function clamp(value: number, minimum: number, maximum: number) {
 	return Math.min(maximum, Math.max(minimum, value));
 }
 
-export function spiral(x, y, z, offset, arm_x, spiral) {
+export function spiral(
+	x: number,
+	y: number,
+	z: number,
+	offset: number,
+	arm_x: number,
+	spiral: number
+) {
 	let r = Math.sqrt(x ** 2 + y ** 2);
 	let theta = offset;
 	theta += x > 0 ? Math.atan(y / x) : Math.atan(y / x) + Math.PI;
@@ -18,7 +25,7 @@ export function spiral(x, y, z, offset, arm_x, spiral) {
 	return [r * Math.cos(theta), r * Math.sin(theta), z];
 }
 
-export function randomPointOnSphere(radius) {
+export function randomPointOnSphere(radius: number) {
 	var theta = Math.random() * 2 * Math.PI;
 	var phi = Math.acos(2 * Math.random() - 1);
 	var x = radius * Math.sin(phi) * Math.cos(theta);
@@ -28,17 +35,17 @@ export function randomPointOnSphere(radius) {
 }
 
 export const generatePositions = (
-	stars,
-	arms_density,
-	arm_x_mean,
-	arm_x,
-	arm_y_mean,
-	arm_y,
-	thickness,
-	core_x,
-	core_y,
-	outer_core_x,
-	spiral_value
+	stars: number,
+	arms_density: number,
+	arm_x_mean: number,
+	arm_x: number,
+	arm_y_mean: number,
+	arm_y: number,
+	thickness: number,
+	core_x: number,
+	core_y: number,
+	outer_core_x: number,
+	spiral_value: number
 ) => {
 	let positions = [];
 

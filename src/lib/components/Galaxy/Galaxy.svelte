@@ -1,7 +1,7 @@
 <script lang="ts">
     import { T } from '@threlte/core'
-    import { generatePositions } from './utils.js';
-    import { getStarType, starTypes } from './config/starDistributions.js'
+    import { generatePositions } from './utils';
+    import { getStarType, starTypes } from './starDistributions'
 
     import {InstancedMesh, Instance } from '@threlte/extras'
 
