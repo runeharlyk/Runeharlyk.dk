@@ -56,7 +56,7 @@
 	{
 		"name": "Galaxy",
 		"description": "ThreeJs Galaxy",
-		"path": "work",
+		"path": "galaxy",
 		"framed_demo": "/scenes/galaxy",
 		"build_with": ["Threlte", "Post Proccesing"],
 		"keywords": ["Threlte", "Galaxy", "Post Proccesing"]
