@@ -1,0 +1,30 @@
+[
+	{
+		"company": "DTU - Technical University of Denmark",
+		"type": "education",
+		"position": "Student",
+		"url": "https://www.dtu.dk/english/education/undergraduate/undergraduate-programmes-in-danish/bsc-eng-programmes/artificial-intelligence-and-data",
+		"description": "Bachelor in artificial intelligence and data",
+		"start": "2022-09-23T00:00:00Z",
+		"end": "2026-06-23T00:00:00Z"
+	},
+	{
+		"company": "Edora A/S",
+		"type": "work",
+		"url": "https://edora.dk/",
+		"position": "Software developer",
+		"employment_type": "Part time",
+		"description": "",
+		"start": "2022-09-23T00:00:00Z"
+	},
+	{
+		"company": "Edora A/S",
+		"type": "work",
+		"url": "https://edora.dk/",
+		"position": "Software developer",
+		"employment_type": "Full time",
+		"description": "",
+		"start": "2022-09-23T00:00:00Z",
+		"end": "2023-08-23T00:00:00Z"
+	}
+]
