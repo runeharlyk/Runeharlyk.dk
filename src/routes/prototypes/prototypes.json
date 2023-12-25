@@ -57,6 +57,7 @@
 		"name": "developer.runeharlyk.dk",
 		"description": "Even more prototypes and doodles",
 		"cover": "/media/developer.png",
+		"path": "developer",
 		"demo": "https://developer.runeharlyk.dk/Explore/",
 		"framed_demo": "https://developer.runeharlyk.dk/Explore/",
 		"build_with": ["JS", "Node"],
