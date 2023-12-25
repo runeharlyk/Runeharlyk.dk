@@ -8,6 +8,13 @@
         --color-bg: 210deg 40% 98%;
     }
 
+    :root::-webkit-scrollbar {
+        height: 16px;
+        overflow: visible;
+        width: 16px;
+        display: none;
+    }
+
     @media (prefers-color-scheme:dark){
         :root  {
             --color-text: 0deg 100% 100%;

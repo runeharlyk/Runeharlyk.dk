@@ -13,8 +13,4 @@
 		</div>
 		<div class="w-1/4 h-full" />
 	</div>
-
-	<div class="h-screen">
-		<h2>Rune Harlyk</h2>
-	</div>
 </div>

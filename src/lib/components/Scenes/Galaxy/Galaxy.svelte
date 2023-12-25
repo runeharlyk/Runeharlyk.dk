@@ -6,7 +6,7 @@
     import {InstancedMesh, Instance } from '@threlte/extras'
 
     export let world_scale = 1
-    export let stars:number = 2000
+    export let stars:number = 4000
     export let arms:number = 4
 
     export let thickness:number = 5

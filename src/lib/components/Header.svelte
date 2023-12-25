@@ -14,8 +14,7 @@
 		</svg>
 	</button> -->
 
-	
-	<nav class="flex items-center w-96 divide-x divide-gray-900 max-md:hidden">
+	<nav class="flex items-center w-96 divide-x divide-gray-900 ">
 		<div >
 			{#each routes as route}
 			<a class="px-4" href={route.route}>{route.name}</a>

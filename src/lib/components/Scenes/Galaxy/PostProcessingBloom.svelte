@@ -6,7 +6,6 @@
       ChromaticAberrationEffect,
       EffectComposer,
       EffectPass,
-      SelectiveBloomEffect,
       FXAAEffect,
       RenderPass,
       ToneMappingEffect,

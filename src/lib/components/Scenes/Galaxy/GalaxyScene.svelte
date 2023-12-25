@@ -9,11 +9,13 @@
 	import Galaxy from './Galaxy.svelte';
 	import Stars from './Stars.svelte';
     
+  export let debug = false
+    
   const mouseX = tweened(0, { duration: 400, easing: cubicOut });
   const mouseY = tweened(0, { duration: 400, easing: cubicOut });
 
-  $: mouseX.set($mousePercent[0])
-  $: mouseY.set($mousePercent[1])
+  $: mouseX.set(debug ? 0 : $mousePercent[0])
+  $: mouseY.set(debug ? 0 : $mousePercent[1])
 </script>
 
 <PostProcessingBloom />
@@ -26,12 +28,12 @@
 
 <T.PerspectiveCamera
   makeDefault
-  position={[50 - $mouseX * 100 , -500 - $mouseY * 100 - $scrollPercent*10, 500]}
+  position={[50 - 0 * 100 , -500 - 0 * 100 - 0*10, 500]}
   fov={50}
 >
   <OrbitControls
     autoRotate={false}
-    enableZoom={false}
+    enableZoom={true}
     enableDamping
     autoRotateSpeed={1}    
   />
