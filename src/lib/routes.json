@@ -12,10 +12,6 @@
 		"route": "/prototypes"
 	},
 	{
-		"name": "Info",
-		"route": "/info"
-	},
-	{
 		"name": "Socials",
 		"route": "/socials"
 	}
