@@ -20,10 +20,13 @@
 		</svg>
 	</button> -->
 
+	<!-- max-md:hidden -->
 	<nav class="flex items-center divide-x divide-gray-900 ">
 		<div >
 			{#each routes as route}
-			<a class="px-4" href={route.route}>{route.name}</a>
+				{#if !route.hidden}
+					<a class="px-4" href={route.route}>{route.name}</a>
+				{/if}
 			{/each}
 		</div>
 	</nav>

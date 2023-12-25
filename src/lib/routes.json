@@ -12,6 +12,16 @@
 		"route": "/prototypes"
 	},
 	{
+		"name": "Scenes",
+		"route": "/scenes",
+		"hidden": true
+	},
+	{
+		"name": "Info",
+		"route": "/info",
+		"hidden": true
+	},
+	{
 		"name": "Socials",
 		"route": "/socials"
 	}
