@@ -21,15 +21,15 @@
 	}
 </script>
 
-<div class="flex justify-center w-screen min-h-screen overflow-scroll">
-	<div class="max-w-7xlxl w-full flex items-center flex-col p-5">
-		<div class="flex divide-x divide-slate-800 uppercase justify-center text-sm">
+<div class="flex justify-center w-screen min-h-screen pt-10">
+	<div class="max-w-7xl w-full flex items-center flex-col p-5">
+		<div class="flex divide-x divide-content/80 uppercase justify-center text-sm text-content/80">
 			{#each data.keywords || [] as keyword}
 			<div class="px-4">{@html keyword}</div>
 			{/each}
 		</div>
-		<h1 class="text-4xl p-10">{data.name}</h1>
-		<div class="divide-x divide-slate-800 pb-4">[
+		<h1 class="text-4xl p-10 text-center">{data.name}</h1>
+		<div class="divide-x divide-content-800 pb-4">[
 			{#if data.framed_demo}
 				<a href={data.framed_demo} class="px-4">Demo</a>
 			{/if}
