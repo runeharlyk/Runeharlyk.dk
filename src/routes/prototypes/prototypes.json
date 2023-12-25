@@ -2,7 +2,7 @@
 	{
 		"name": "Pizza Compass",
 		"description": "A compass that always point toward the closes pizza place",
-		"path": "pizza-compass",
+		"path": "/prototypes/pizza-compass",
 		"cover": "/media/pizza-compass.png",
 		"demo": "https://play.runeharlyk.dk/pizzacompass",
 		"framed_demo": "https://play.runeharlyk.dk/pizzacompass",
@@ -13,7 +13,7 @@
 	{
 		"name": "Bunny OS",
 		"description": "A OS UX in the common web browser",
-		"path": "bunny-os",
+		"path": "/prototypes/bunny-os",
 		"cover": "/media/bunny.png",
 		"demo": "https://bunnyos.runeharlyk.dk/",
 		"framed_demo": "https://bunnyos.runeharlyk.dk/",
@@ -24,7 +24,7 @@
 	{
 		"name": "Neural Visualizer",
 		"description": "3D interactive visualization of neural network architectures",
-		"path": "neural-visualizer",
+		"path": "/prototypes/neural-visualizer",
 		"cover": "/media/neural.png",
 		"demo": "https://runeharlyk.github.io/Neural-Visualizer",
 		"framed_demo": "https://runeharlyk.github.io/Neural-Visualizer",
@@ -37,7 +37,7 @@
 		"name": "Spot Micro | Leika",
 		"description": "My take on the quadruped Spot Micro robot. Its built around an ESP32 cam microcontroller and utilizes a svelte app to control it",
 		"framed_demo": "https://raw.githubusercontent.com/runeharlyk/SpotMicro-Leika/main/assets/logo.jpg",
-		"path": "spot-micro",
+		"path": "/prototypes/spot-micro",
 		"cover": "/media/leika.jpg",
 		"source": "https://github.com/runeharlyk/SpotMicroESP32-Leika",
 		"keywords": ["Spot-micro", "Three", "Svelte", "ESP32"]
@@ -45,7 +45,7 @@
 	{
 		"name": "Runeharlyk.dk",
 		"description": "",
-		"path": "runeharlyk.dk",
+		"path": "/prototypes/runeharlyk.dk",
 		"cover": "/media/runeharlyk.dk.png",
 		"demo": "https://",
 		"framed_demo": "https://runeharlyk.dk",
@@ -57,7 +57,7 @@
 		"name": "developer.runeharlyk.dk",
 		"description": "Even more prototypes and doodles",
 		"cover": "/media/developer.png",
-		"path": "developer",
+		"path": "/prototypes/developer",
 		"demo": "https://developer.runeharlyk.dk/Explore/",
 		"framed_demo": "https://developer.runeharlyk.dk/Explore/",
 		"build_with": ["JS", "Node"],
@@ -66,7 +66,7 @@
 	{
 		"name": "Galaxy",
 		"description": "ThreeJs Galaxy",
-		"path": "galaxy",
+		"path": "/prototypes/galaxy",
 		"framed_demo": "/scenes/galaxy",
 		"build_with": ["Threlte", "Post Proccesing"],
 		"keywords": ["Threlte", "Galaxy", "Post Proccesing"]
@@ -74,7 +74,7 @@
 	{
 		"name": "Ocean tank",
 		"description": "Ocean populated with Boids",
-		"path": "ocean",
+		"path": "/prototypes/ocean",
 		"framed_demo": "/scenes/ocean",
 		"build_with": ["Threlte", "Post Proccesing"],
 		"keywords": ["Threlte", "Galaxy", "Post Proccesing"]
