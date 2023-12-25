@@ -3,6 +3,7 @@
     const dispatch = createEventDispatcher()
 
     export let url:string | undefined
+    export let permissions = ["geolocation", "camera"]
     let reload = {};
 
     $: reload = {}
@@ -21,6 +22,7 @@
         <object
         class="{$$restProps.class || ''}"
         title="browser"
+        allow="{permissions.join('; ')}"
         name={`${Date.now()}`}
         data="{url}"
         on:load={handleLoad}
