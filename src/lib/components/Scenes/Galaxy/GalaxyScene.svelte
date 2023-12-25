@@ -28,7 +28,7 @@
 
 <T.PerspectiveCamera
   makeDefault
-  position={[50 - 0 * 100 , -500 - 0 * 100 - 0*10, 500]}
+  position={[50 - $mouseX * 50 , -500 - $mouseY * 100 - $scrollPercent*10, 500 ]}
   fov={50}
 >
   <OrbitControls
