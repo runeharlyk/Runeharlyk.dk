@@ -1,24 +1,11 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import type { prototype } from '$lib/models';
+	import ReloadableFrame from '$lib/components/ReloadableFrame.svelte';
 
 	export let data:prototype;
-	let frame:HTMLIFrameElement;
 	let frame_hidden = true
 
-	$: {
-		frame_hidden = true
-		loadDemo()
-	}
-
-	onMount(() => {
-		loadDemo()
-	})
-
-	const loadDemo = () => {
-		if (!frame || !data.framed_demo) return
-		frame.onload = () => frame_hidden = false			
-		frame.src = data.framed_demo
-	}
+	const setFrameVisibility = (state:boolean) => frame_hidden = state
 </script>
 
 <div class="flex justify-center w-screen min-h-screen pt-10">
@@ -39,13 +26,12 @@
 		]
 		</div>
 		<div class="w-full max-w-7xl flex items-center">
-			<div class={`w-full border-grey-900 transition-height duration-1000 backdrop-blur-md overflow-hidden ${frame_hidden ? 'h-0' : 'h-full'} ${data.framed_demo?'border-2':''}`}>
-				{#if data.framed_demo }
-				<iframe 
-				class={`w-full  transition-height duration-1000 aspect-video`}
-				bind:this={frame} 
-				title="demo" />
-				{/if}
+			<div class={`border-grey-900 transition-height duration-1000 backdrop-blur-md overflow-hidden ${frame_hidden ? 'h-0' : 'h-full'} ${data.framed_demo?'border-2':''}`}>
+				<ReloadableFrame 
+				on:load={() => setFrameVisibility(false)}
+				on:error={() => setFrameVisibility(true)}
+				url={data.framed_demo} 
+				class="w-full transition-height duration-1000 aspect-video" />
 			</div>
 		</div>
 	
