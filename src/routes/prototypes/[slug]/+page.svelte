@@ -26,7 +26,7 @@
 		]
 		</div>
 		<div class="w-full max-w-7xl flex items-center">
-			<div class={`border-grey-900 transition-height duration-1000 backdrop-blur-md overflow-hidden ${frame_hidden ? 'h-0' : 'h-full'} ${data.framed_demo?'border-2':''}`}>
+			<div class={`w-full border-grey-900 transition-height duration-1000 backdrop-blur-md overflow-hidden ${frame_hidden ? 'h-0' : 'h-full'} ${data.framed_demo?'border-2':''}`}>
 				<ReloadableFrame 
 				on:load={() => setFrameVisibility(false)}
 				on:error={() => setFrameVisibility(true)}
