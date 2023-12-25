@@ -3,4 +3,4 @@
 	export let data;
 </script>
 
-<Background scene={data.sceneName} />
+<Background debug={true} scene={data.sceneName} />

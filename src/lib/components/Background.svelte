@@ -5,14 +5,15 @@
 	import type { BackgroundScene } from '$lib/models';
 
     export let scene:BackgroundScene
+    export let debug:boolean = false
 </script>
 
 <div class="fixed top-0 h-full w-full -z-10 bg-{scene}">
     <Canvas>
         {#if scene === "Galaxy"}
-            <GalaxyScene />
+            <GalaxyScene debug={debug}/>
         {:else if scene === "Ocean"}
-            <OceanScene />
+            <OceanScene debug={debug}/>
         {/if}
     </Canvas>
 </div>

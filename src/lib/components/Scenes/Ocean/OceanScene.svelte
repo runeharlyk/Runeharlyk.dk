@@ -17,9 +17,11 @@
     
   const mouseX = tweened(0, { duration: 400, easing: cubicOut });
   const mouseY = tweened(0, { duration: 400, easing: cubicOut });
+  const scrollY = tweened(0, { duration: 400, easing: cubicOut });
 
   $: mouseX.set(debug ? 0 : $mousePercent[0])
   $: mouseY.set(debug ? 0 : $mousePercent[1])
+  $: scrollY.set(debug ? 0 : $scrollPercent)
 
   // Terrain setup
   const terrainSize = 100
@@ -76,7 +78,7 @@
 
 <T.PerspectiveCamera
   makeDefault
-  position={[ -50,10+  -$mouseY - $scrollPercent/10 + 1, $mouseX]}
+  position={[ -50,10+  -$mouseY - $scrollY/10 + 1, $mouseX]}
   fov={50}
 >
   <OrbitControls
@@ -84,7 +86,7 @@
     enableZoom={true}
     enableDamping
     autoRotateSpeed={0.5}
-    target={[0,-$scrollPercent/10+1,0]}
+    target={[0,-$scrollY/10+1,0]}
   />
 </T.PerspectiveCamera>
 
