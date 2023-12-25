@@ -44,6 +44,7 @@
 	"dependencies": {
 		"@sveltejs/adapter-static": "^2.0.3",
 		"animejs": "^3.2.2",
-		"postprocessing": "^6.33.4"
+		"postprocessing": "^6.33.4",
+		"simplex-noise": "^4.0.1"
 	}
 }
