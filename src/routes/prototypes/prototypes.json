@@ -67,6 +67,7 @@
 		"name": "Galaxy",
 		"description": "ThreeJs Galaxy",
 		"path": "/prototypes/galaxy",
+		"cover": "/media/galaxy.png",
 		"framed_demo": "/scenes/galaxy",
 		"build_with": ["Threlte", "Post Proccesing"],
 		"keywords": ["Threlte", "Galaxy", "Post Proccesing"]
@@ -75,6 +76,7 @@
 		"name": "Ocean tank",
 		"description": "Ocean populated with Boids",
 		"path": "/prototypes/ocean",
+		"cover": "/media/ocean.png",
 		"framed_demo": "/scenes/ocean",
 		"build_with": ["Threlte", "Post Proccesing"],
 		"keywords": ["Threlte", "Galaxy", "Post Proccesing"]
