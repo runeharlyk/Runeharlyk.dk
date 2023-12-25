@@ -21,9 +21,6 @@
   $: mouseX.set(debug ? 0 : $mousePercent[0])
   $: mouseY.set(debug ? 0 : $mousePercent[1])
 
-  // $: mouseX.set($mousePercent[0])
-  // $: mouseY.set($mousePercent[1])
-
   // Terrain setup
   const terrainSize = 100
   const height = 20
