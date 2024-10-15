@@ -10,6 +10,9 @@ export default {
 				content: 'hsl(var(--color-text) / <alpha-value>)',
 				bg: 'hsl(var(--color-bg) / <alpha-value>)'
 			}
+		},
+		fontFamily: {
+			'display': ['blender', 'Oswald', 'Helvetica']
 		}
 	},
 	plugins: []

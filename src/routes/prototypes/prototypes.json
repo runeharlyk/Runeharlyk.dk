@@ -1,5 +1,23 @@
 [
 	{
+		"name": "Hamster pedometer",
+		"description": "This project aim to track hamsters routine, health and running stats. Built on an ESP32 with an external hall effect sensor and a couple of small magnets, it aims to be both affordable and accessible.",
+		"path": "/prototypes/hamster-pedometer",
+		"cover": "/media/hamster-pedometer.png",
+		"source": "https://github.com/runeharlyk/Hamster-Pedometer",
+		"build_with": ["Svelte", "ESP32"],
+		"keywords": ["Pedometer", "Svelte"]
+	},
+	{
+		"name": "Flappy bird, but everything is a browser window",
+		"description": "Flappy bird, but everything is a browser window",
+		"path": "/prototypes/flappy-bird",
+		"cover": "/media/flappy-bird.gif",
+		"demo": "https://developer.runeharlyk.dk/Explore/files/flappy-bird/",
+		"source": "https://github.com/runeharlyk/Flappy-bird-but-everything-is-a-browser-windowPizza-Compass",
+		"keywords": ["Flappy-bird", "Web-Api"]
+	},
+	{
 		"name": "Pizza Compass",
 		"description": "A compass that always point toward the closes pizza place",
 		"path": "/prototypes/pizza-compass",
@@ -36,7 +54,7 @@
 	{
 		"name": "Spot Micro | Leika",
 		"description": "My take on the quadruped Spot Micro robot. Its built around an ESP32 cam microcontroller and utilizes a svelte app to control it",
-		"framed_demo": "https://raw.githubusercontent.com/runeharlyk/SpotMicro-Leika/main/assets/logo.jpg",
+		"framed_demo": "/media/controller.gif",
 		"path": "/prototypes/spot-micro",
 		"cover": "/media/leika.jpg",
 		"source": "https://github.com/runeharlyk/SpotMicroESP32-Leika",
