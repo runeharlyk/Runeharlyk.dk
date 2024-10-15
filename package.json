@@ -44,6 +44,7 @@
 	"dependencies": {
 		"@sveltejs/adapter-static": "^2.0.3",
 		"animejs": "^3.2.2",
+		"daisyui": "^4.12.13",
 		"postprocessing": "^6.36.3",
 		"simplex-noise": "^4.0.3"
 	}

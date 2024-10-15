@@ -15,6 +15,10 @@ export default {
 			'display': ['blender', 'Oswald', 'Helvetica']
 		}
 	},
-	plugins: []
+	plugins: [require('daisyui')],
+	daisyui: {
+		themes: ['dark'],
+		darkTheme: 'dark'
+	}
 };
 
